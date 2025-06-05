@@ -1,0 +1,2 @@
+source C:/esp_projects/softap/build/bootloader/gdbinit/symbols
+source C:/esp_projects/softap/build/bootloader/gdbinit/connect

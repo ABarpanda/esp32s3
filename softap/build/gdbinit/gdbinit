@@ -1,0 +1,2 @@
+source C:/esp_projects/softap/build/gdbinit/symbols
+source C:/esp_projects/softap/build/gdbinit/connect

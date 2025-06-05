@@ -1,0 +1,12 @@
+Timestamp,Humidity (%),Temperature (°C)
+2025-05-29 10:14:52.031,NA,NA
+2025-05-29 10:14:54.050,E (163919) dht: Initialization error, problem in phase 'C'
+2025-05-29 10:14:54.051,NA,NA
+2025-05-29 10:14:56.071,E (165939) dht: Initialization error, problem in phase 'C'
+2025-05-29 10:14:56.071,NA,NA
+2025-05-29 10:14:58.091,E (167959) dht: Initialization error, problem in phase 'C'
+2025-05-29 10:14:58.091,NA,NA
+2025-05-29 10:15:00.109,E (169979) dht: Initialization error, problem in phase 'C'
+2025-05-29 10:15:00.109,NA,NA
+2025-05-29 10:15:02.130,E (171999) dht: Initialization error, problem in phase 'C'
+2025-05-29 10:15:02.130,NA,NA

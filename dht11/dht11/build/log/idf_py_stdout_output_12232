@@ -1,0 +1,242 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x2b (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037835e
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2f00
+entry 0x403c8928
+[0;32mI (26) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time May 28 2025 22:12:41[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0a658h ( 42584) map[0m
+[0;32mI (96) esp_image: segment 1: paddr=0001a680 vaddr=3fc92300 size=029f8h ( 10744) load[0m
+[0;32mI (99) esp_image: segment 2: paddr=0001d080 vaddr=40374000 size=02f98h ( 12184) load[0m
+[0;32mI (106) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=18978h (100728) map[0m
+[0;32mI (128) esp_image: segment 4: paddr=000389a0 vaddr=40376f98 size=0b348h ( 45896) load[0m
+[0;32mI (139) esp_image: segment 5: paddr=00043cf0 vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (145) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (145) boot: Disabling RNG early entropy source...[0m
+[0;32mI (157) cpu_start: Multicore app[0m
+[0;32mI (166) cpu_start: Pro cpu start user code[0m
+[0;32mI (166) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (166) app_init: Application information:[0m
+[0;32mI (166) app_init: Project name:     dht11[0m
+[0;32mI (170) app_init: App version:      1[0m
+[0;32mI (173) app_init: Compile time:     May 28 2025 22:12:23[0m
+[0;32mI (178) app_init: ELF file SHA256:  1d05e326a...[0m
+[0;32mI (182) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (186) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (190) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (194) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (198) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (204) heap_init: At 3FC955D0 len 00054140 (336 KiB): RAM[0m
+[0;32mI (209) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (214) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (220) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
+[0;32mI (226) spi_flash: detected chip: gd[0m
+[0;32mI (228) spi_flash: flash io: dio[0m
+[0;33mW (231) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (243) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (250) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (257) main_task: Started on CPU0[0m
+[0;32mI (267) main_task: Calling app_main()[0m
+[0;32mI (267) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (297) DHT_APP: Humidity: 89% Temp: 31°C from sensor 1[0m
+[0;32mI (297) GPIO: Setting GPIO3 LOW[0m
+[0;32mI (2317) DHT_APP: Humidity: 87% Temp: 31°C from sensor 1[0m
+[0;32mI (2317) GPIO: Setting GPIO3 LOW[0m
+[0;32mI (4337) DHT_APP: Humidity: 85% Temp: 31°C from sensor 1[0m
+[0;32mI (4337) GPIO: Setting GPIO3 LOW[0m
+[0;32mI (6357) DHT_APP: Humidity: 85% Temp: 31°C from sensor 1[0m
+[0;32mI (6357) GPIO: Setting GPIO3 LOW[0m
+[0;32mI (8377) DHT_APP: Humidity: 85% Temp: 31°C from sensor 1[0m
+[0;32mI (8377) GPIO: Setting GPIO3 LOW[0m
+[0;32mI (10397) DHT_APP: Humidity: 84% Temp: 31°C from sensor 1[0m
+[0;32mI (10397) GPIO: Setting GPIO3 LOW[0m
+[0;32mI (12417) DHT_APP: Humidity: 81% Temp: 31°C from sensor 1[0m
+[0;32mI (12417) GPIO: Setting GPIO3 LOW[0m
+[0;32mI (14437) DHT_APP: Humidity: 80% Temp: 31°C from sensor 1[0m
+[0;32mI (14437) GPIO: Setting GPIO3 LOW[0m
+[0;32mI (16457) DHT_APP: Humidity: 79% Temp: 31°C from sensor 1[0m
+[0;32mI (16457) GPIO: Setting GPIO3 LOW[0m
+[0;32mI (18477) DHT_APP: Humidity: 78% Temp: 31°C from sensor 1[0m
+[0;32mI (18477) GPIO: Setting GPIO3 LOW[0m
+[0;32mI (20497) DHT_APP: Humidity: 77% Temp: 31°C from sensor 1[0m
+[0;32mI (20497) GPIO: Setting GPIO3 LOW[0m
+[0;32mI (22517) DHT_APP: Humidity: 77% Temp: 31°C from sensor 1[0m
+[0;32mI (22517) GPIO: Setting GPIO3 LOW[0m
+[0;32mI (24537) DHT_APP: Humidity: 76% Temp: 31°C from sensor 1[0m
+[0;32mI (24537) GPIO: Setting GPIO3 LOW[0m
+[0;32mI (26557) DHT_APP: Humidity: 75% Temp: 31°C from sensor 1[0m
+[0;32mI (26557) GPIO: Setting GPIO3 LOW[0m
+[0;32mI (28577) DHT_APP: Humidity: 90% Temp: 32°C from sensor 1[0m
+[0;32mI (30597) DHT_APP: Humidity: 95% Temp: 33°C from sensor 1[0m
+[0;32mI (30597) GPIO: Setting GPIO3 HIGH[0m
+[0;32mI (32617) DHT_APP: Humidity: 95% Temp: 33°C from sensor 1[0m
+[0;32mI (32617) GPIO: Setting GPIO3 HIGH[0m
+[0;32mI (34637) DHT_APP: Humidity: 95% Temp: 33°C from sensor 1[0m
+[0;32mI (34637) GPIO: Setting GPIO3 HIGH[0m
+[0;32mI (36657) DHT_APP: Humidity: 95% Temp: 32°C from sensor 1[0m
+[0;32mI (36657) GPIO: Setting GPIO3 HIGH[0m
+[0;32mI (38677) DHT_APP: Humidity: 95% Temp: 32°C from sensor 1[0m
+[0;32mI (38677) GPIO: Setting GPIO3 HIGH[0m
+[0;32mI (40697) DHT_APP: Humidity: 95% Temp: 32°C from sensor 1[0m
+[0;32mI (40697) GPIO: Setting GPIO3 HIGH[0m
+[0;32mI (42717) DHT_APP: Humidity: 95% Temp: 32°C from sensor 1[0m
+[0;32mI (42717) GPIO: Setting GPIO3 HIGH[0m
+[0;32mI (44737) DHT_APP: Humidity: 95% Temp: 32°C from sensor 1[0m
+[0;32mI (44737) GPIO: Setting GPIO3 HIGH[0m
+[0;32mI (46757) DHT_APP: Humidity: 95% Temp: 32°C from sensor 1[0m
+[0;32mI (46757) GPIO: Setting GPIO3 HIGH[0m
+[0;32mI (48777) DHT_APP: Humidity: 95% Temp: 32°C from sensor 1[0m
+[0;32mI (48777) GPIO: Setting GPIO3 HIGH[0m
+[0;32mI (50797) DHT_APP: Humidity: 95% Temp: 32°C from sensor 1[0m
+[0;32mI (50797) GPIO: Setting GPIO3 HIGH[0m
+[0;32mI (52817) DHT_APP: Humidity: 95% Temp: 32°C from sensor 1[0m
+[0;32mI (52817) GPIO: Setting GPIO3 HIGH[0m
+[0;32mI (54837) DHT_APP: Humidity: 95% Temp: 32°C from sensor 1[0m
+[0;32mI (54837) GPIO: Setting GPIO3 HIGH[0m
+[0;32mI (56857) DHT_APP: Humidity: 95% Temp: 32°C from sensor 1[0m
+[0;32mI (56857) GPIO: Setting GPIO3 HIGH[0m
+[0;32mI (58877) DHT_APP: Humidity: 93% Temp: 32°C from sensor 1[0m
+[0;32mI (58877) GPIO: Setting GPIO3 HIGH[0m
+[0;32mI (60897) DHT_APP: Humidity: 90% Temp: 32°C from sensor 1[0m
+[0;32mI (62917) DHT_APP: Humidity: 90% Temp: 32°C from sensor 1[0m
+[0;32mI (64937) DHT_APP: Humidity: 89% Temp: 32°C from sensor 1[0m
+[0;32mI (64937) GPIO: Setting GPIO3 LOW[0m
+[0;32mI (66957) DHT_APP: Humidity: 87% Temp: 32°C from sensor 1[0m
+[0;32mI (66957) GPIO: Setting GPIO3 LOW[0m
+[0;32mI (68977) DHT_APP: Humidity: 85% Temp: 32°C from sensor 1[0m
+[0;32mI (68977) GPIO: Setting GPIO3 LOW[0m
+[0;32mI (70997) DHT_APP: Humidity: 85% Temp: 32°C from sensor 1[0m
+[0;32mI (70997) GPIO: Setting GPIO3 LOW[0m
+[0;32mI (73017) DHT_APP: Humidity: 85% Temp: 32°C from sensor 1[0m
+[0;32mI (73017) GPIO: Setting GPIO3 LOW[0m
+[0;32mI (75037) DHT_APP: Humidity: 82% Temp: 32°C from sensor 1[0m
+[0;32mI (75037) GPIO: Setting GPIO3 LOW[0m
+[0;32mI (77057) DHT_APP: Humidity: 80% Temp: 32°C from sensor 1[0m
+[0;32mI (77057) GPIO: Setting GPIO3 LOW[0m
+[0;32mI (79077) DHT_APP: Humidity: 79% Temp: 32°C from sensor 1[0m
+[0;32mI (79077) GPIO: Setting GPIO3 LOW[0m
+[0;32mI (81097) DHT_APP: Humidity: 78% Temp: 32°C from sensor 1[0m
+[0;32mI (81097) GPIO: Setting GPIO3 LOW[0m
+[0;32mI (83117) DHT_APP: Humidity: 78% Temp: 32°C from sensor 1[0m
+[0;32mI (83117) GPIO: Setting GPIO3 LOW[0m
+[0;32mI (85137) DHT_APP: Humidity: 77% Temp: 32°C from sensor 1[0m
+[0;32mI (85137) GPIO: Setting GPIO3 LOW[0m
+[0;32mI (87157) DHT_APP: Humidity: 76% Temp: 32°C from sensor 1[0m
+[0;32mI (87157) GPIO: Setting GPIO3 LOW[0m
+[0;32mI (89177) DHT_APP: Humidity: 75% Temp: 32°C from sensor 1[0m
+[0;32mI (89177) GPIO: Setting GPIO3 LOW[0m
+[0;32mI (91197) DHT_APP: Humidity: 75% Temp: 32°C from sensor 1[0m
+[0;32mI (91197) GPIO: Setting GPIO3 LOW[0m
+[0;32mI (93217) DHT_APP: Humidity: 75% Temp: 32°C from sensor 1[0m
+[0;32mI (93217) GPIO: Setting GPIO3 LOW[0m
+[0;32mI (95237) DHT_APP: Humidity: 74% Temp: 32°C from sensor 1[0m
+[0;32mI (95237) GPIO: Setting GPIO3 LOW[0m
+[0;32mI (97257) DHT_APP: Humidity: 73% Temp: 32°C from sensor 1[0m
+[0;32mI (97257) GPIO: Setting GPIO3 LOW[0m
+[0;32mI (99277) DHT_APP: Humidity: 73% Temp: 32°C from sensor 1[0m
+[0;32mI (99277) GPIO: Setting GPIO3 LOW[0m
+[0;32mI (101297) DHT_APP: Humidity: 72% Temp: 32°C from sensor 1[0m
+[0;32mI (101297) GPIO: Setting GPIO3 LOW[0m
+[0;32mI (103317) DHT_APP: Humidity: 71% Temp: 32°C from sensor 1[0m
+[0;32mI (103317) GPIO: Setting GPIO3 LOW[0m
+[0;32mI (105337) DHT_APP: Humidity: 71% Temp: 32°C from sensor 1[0m
+[0;32mI (105337) GPIO: Setting GPIO3 LOW[0m
+[0;32mI (107357) DHT_APP: Humidity: 70% Temp: 32°C from sensor 1[0m
+[0;32mI (107357) GPIO: Setting GPIO3 LOW[0m
+[0;32mI (109377) DHT_APP: Humidity: 70% Temp: 32°C from sensor 1[0m
+[0;32mI (109377) GPIO: Setting GPIO3 LOW[0m
+[0;32mI (111397) DHT_APP: Humidity: 70% Temp: 32°C from sensor 1[0m
+[0;32mI (111397) GPIO: Setting GPIO3 LOW[0m
+[0;32mI (113417) DHT_APP: Humidity: 95% Temp: 32°C from sensor 1[0m
+[0;32mI (113417) GPIO: Setting GPIO3 HIGH[0m
+[0;32mI (115437) DHT_APP: Humidity: 95% Temp: 32°C from sensor 1[0m
+[0;32mI (115437) GPIO: Setting GPIO3 HIGH[0m
+[0;32mI (117457) DHT_APP: Humidity: 95% Temp: 32°C from sensor 1[0m
+[0;32mI (117457) GPIO: Setting GPIO3 HIGH[0m
+[0;32mI (119477) DHT_APP: Humidity: 95% Temp: 32°C from sensor 1[0m
+[0;32mI (119477) GPIO: Setting GPIO3 HIGH[0m
+[0;32mI (121497) DHT_APP: Humidity: 95% Temp: 32°C from sensor 1[0m
+[0;32mI (121497) GPIO: Setting GPIO3 HIGH[0m
+[0;32mI (123517) DHT_APP: Humidity: 95% Temp: 32°C from sensor 1[0m
+[0;32mI (123517) GPIO: Setting GPIO3 HIGH[0m
+[0;32mI (125537) DHT_APP: Humidity: 95% Temp: 32°C from sensor 1[0m
+[0;32mI (125537) GPIO: Setting GPIO3 HIGH[0m
+[0;32mI (127557) DHT_APP: Humidity: 95% Temp: 32°C from sensor 1[0m
+[0;32mI (127557) GPIO: Setting GPIO3 HIGH[0m
+[0;32mI (129577) DHT_APP: Humidity: 95% Temp: 32°C from sensor 1[0m
+[0;32mI (129577) GPIO: Setting GPIO3 HIGH[0m
+[0;32mI (131597) DHT_APP: Humidity: 95% Temp: 32°C from sensor 1[0m
+[0;32mI (131597) GPIO: Setting GPIO3 HIGH[0m
+[0;32mI (133617) DHT_APP: Humidity: 95% Temp: 32°C from sensor 1[0m
+[0;32mI (133617) GPIO: Setting GPIO3 HIGH[0m
+[0;32mI (135637) DHT_APP: Humidity: 94% Temp: 32°C from sensor 1[0m
+[0;32mI (135637) GPIO: Setting GPIO3 HIGH[0m
+[0;32mI (137657) DHT_APP: Humidity: 90% Temp: 32°C from sensor 1[0m
+[0;32mI (139677) DHT_APP: Humidity: 90% Temp: 32°C from sensor 1[0m
+[0;32mI (141697) DHT_APP: Humidity: 87% Temp: 32°C from sensor 1[0m
+[0;32mI (141697) GPIO: Setting GPIO3 LOW[0m
+[0;32mI (143717) DHT_APP: Humidity: 85% Temp: 32°C from sensor 1[0m
+[0;32mI (143717) GPIO: Setting GPIO3 LOW[0m
+[0;32mI (145737) DHT_APP: Humidity: 85% Temp: 32°C from sensor 1[0m
+[0;32mI (145737) GPIO: Setting GPIO3 LOW[0m
+[0;32mI (147757) DHT_APP: Humidity: 83% Temp: 32°C from sensor 1[0m
+[0;32mI (147757) GPIO: Setting GPIO3 LOW[0m
+[0;32mI (149777) DHT_APP: Humidity: 80% Temp: 32°C from sensor 1[0m
+[0;32mI (149777) GPIO: Setting GPIO3 LOW[0m
+[0;32mI (151797) DHT_APP: Humidity: 79% Temp: 32°C from sensor 1[0m
+[0;32mI (151797) GPIO: Setting GPIO3 LOW[0m
+[0;32mI (153817) DHT_APP: Humidity: 78% Temp: 32°C from sensor 1[0m
+[0;32mI (153817) GPIO: Setting GPIO3 LOW[0m
+[0;32mI (155837) DHT_APP: Humidity: 77% Temp: 32°C from sensor 1[0m
+[0;32mI (155837) GPIO: Setting GPIO3 LOW[0m
+[0;32mI (157857) DHT_APP: Humidity: 75% Temp: 32°C from sensor 1[0m
+[0;32mI (157857) GPIO: Setting GPIO3 LOW[0m
+[0;32mI (159877) DHT_APP: Humidity: 75% Temp: 32°C from sensor 1[0m
+[0;32mI (159877) GPIO: Setting GPIO3 LOW[0m
+[0;32mI (161897) DHT_APP: Humidity: 74% Temp: 32°C from sensor 1[0m
+[0;32mI (161897) GPIO: Setting GPIO3 LOW[0m
+[0;32mI (163917) DHT_APP: Humidity: 73% Temp: 32°C from sensor 1[0m
+[0;32mI (163917) GPIO: Setting GPIO3 LOW[0m
+[0;32mI (165937) DHT_APP: Humidity: 73% Temp: 32°C from sensor 1[0m
+[0;32mI (165937) GPIO: Setting GPIO3 LOW[0m
+[0;32mI (167957) DHT_APP: Humidity: 72% Temp: 32°C from sensor 1[0m
+[0;32mI (167957) GPIO: Setting GPIO3 LOW[0m
+[0;32mI (169977) DHT_APP: Humidity: 71% Temp: 32°C from sensor 1[0m
+[0;32mI (169977) GPIO: Setting GPIO3 LOW[0m
+[0;32mI (171997) DHT_APP: Humidity: 70% Temp: 32°C from sensor 1[0m
+[0;32mI (171997) GPIO: Setting GPIO3 LOW[0m
+[0;32mI (174017) DHT_APP: Humidity: 70% Temp: 32°C from sensor 1[0m
+[0;32mI (174017) GPIO: Setting GPIO3 LOW[0m
+[0;32mI (176037) DHT_APP: Humidity: 69% Temp: 32°C from sensor 1[0m
+[0;32mI (176037) GPIO: Setting GPIO3 LOW[0m
+[0;32mI (178057) DHT_APP: Humidity: 69% Temp: 32°C from sensor 1[0m
+[0;32mI (178057) GPIO: Setting GPIO3 LOW[0m
+[0;32mI (180077) DHT_APP: Humidity: 68% Temp: 32°C from sensor 1[0m
+[0;32mI (180077) GPIO: Setting GPIO3 LOW[0m
+[0;32mI (182097) DHT_APP: Humidity: 68% Temp: 32°C from sensor 1[0m
+[0;32mI (182097) GPIO: Setting GPIO3 LOW[0m
+[0;32mI (184117) DHT_APP: Humidity: 68% Temp: 32°C from sensor 1[0m
+[0;32mI (184117) GPIO: Setting GPIO3 LOW[0m
+[0;32mI (186137) DHT_APP: Humidity: 67% Temp: 32°C from sensor 1[0m
+[0;32mI (186137) GPIO: Setting GPIO3 LOW[0m
+[0;32mI (188157) DHT_APP: Humidity: 67% Temp: 32°C from sensor 1[0m
+[0;32mI (188157) GPIO: Setting GPIO3 LOW[0m

@@ -1,0 +1,2 @@
+source C:/esp_projects/wifi_dashboard/build/bootloader/gdbinit/symbols
+source C:/esp_projects/wifi_dashboard/build/bootloader/gdbinit/connect
