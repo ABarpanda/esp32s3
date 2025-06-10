@@ -28,6 +28,8 @@ esp_err_t dht_init(gpio_num_t pin, dht_type_t type) {
         .intr_type = GPIO_INTR_DISABLE,
     };
     gpio_config(&io_conf);
+    ESP_LOGI("dht", "Initializing DHT on GPIO %d", pin);
+
 
     return ESP_OK;
 }
@@ -46,7 +48,6 @@ esp_err_t dht_read(float *temperature, float *humidity) {
         ESP_LOGE(TAG, "Timeout waiting for sensor response LOW");
         return ESP_FAIL;
     }
-
     if (wait_level(1, 90) < 0) {
         ESP_LOGE(TAG, "Timeout waiting for sensor response HIGH");
         return ESP_FAIL;
@@ -57,8 +58,7 @@ esp_err_t dht_read(float *temperature, float *humidity) {
             ESP_LOGE(TAG, "Timeout waiting for LOW bit %d", i);
             return ESP_FAIL;
         }
-
-        int high_us = wait_level(1, 100);  // give it a bit more margin
+        int high_us = wait_level(1, 100);  // increased from 75 to 100
         if (high_us < 0) {
             ESP_LOGE(TAG, "Timeout waiting for HIGH bit %d", i);
             return ESP_FAIL;

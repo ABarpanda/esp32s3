@@ -22,7 +22,7 @@ static esp_err_t dht_handler(httpd_req_t *req) {
     for (int i = 0; i < 3; i++) {
         ret = dht_read(&t, &h);
         if (ret == ESP_OK) break;
-        vTaskDelay(pdMS_TO_TICKS(200));  // wait before retry
+        vTaskDelay(pdMS_TO_TICKS(200));
     }
 
     if (ret == ESP_OK) {
@@ -34,7 +34,6 @@ static esp_err_t dht_handler(httpd_req_t *req) {
         return ESP_FAIL;
     }
 }
-
 
 static void start_webserver(void) {
     httpd_handle_t srv;
